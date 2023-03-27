@@ -2,4 +2,85 @@ header {
   height: 100vh;
   background-image: url('./../assets/home.jpg');
   background-size: cover;
+  
+
+
+}
+
+.navBar {
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 85px;
+  width: 100%;
+  padding: 0 60px;
+}
+
+.logo {
+  cursor: pointer;
+
+}
+
+.menu {
+    
+
+      li {
+        display: inline;
+        
+
+        a {
+          float: left;
+          padding: 12px;
+          font-size: 1rem;
+          text-decoration: none;
+
+
+      }
+  }
+}
+
+.navBar a:hover {
+  border-bottom-width: 4px;
+  border-bottom-color: #333;
+  border-bottom-style:ridge;
+  
+
+}
+
+.checkout {
+  cursor: pointer;
+
+}
+
+.about {
+
+
+  padding-left: 20%;
+  padding-right: 60%;
+  
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+p {
+  font-size: 0.75rem;
+  line-height: 1.25;
+  font-family: "poppins, regular", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
