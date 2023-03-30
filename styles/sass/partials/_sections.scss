@@ -1,0 +1,169 @@
+@use "./html";
+
+
+wrapper {
+
+  max-width: 1080px;
+
+}
+
+
+.category {
+  display: inline-block;
+  justify-content: center;
+
+}
+
+.category img {
+  height: 400px;
+  width: 250px;
+  margin: 20px;
+}
+ 
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+
+  }
+  
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+    }
+
+.gallery img {
+  border: 2px solid #66666658;
+  height: 300px;
+  width: 200px;
+  margin: 10px;
+  padding-bottom: 40px;
+ 
+
+}
+
+.productcard1 {
+  position: relative;
+}
+
+.descAbsolute {
+  background: palegreen;
+  width: 175px;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+
+/*.gallery img {
+      border: 2px solid #66666658;
+      height: 300px;
+      width: 200px;
+      margin: 10px;
+      padding-bottom: 40px;
+      
+  }
+
+.product1.checkoutimage1 {
+  width: 10px;
+  height: 10px;
+    
+  }*/
+
+.igfeed h2 {
+    text-align: center;
+    margin: 0 auto;
+  
+  }
+
+.igfeed h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+
+
+.igfeed {
+  display: inline-block;
+
+  justify-content: center;
+
+
+      li {
+        
+        list-style: none;
+
+      }
+}
+
+  .igfeed img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+
+/*.prod {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.prod1 {
+  border: 2px solid #666;
+  height: 300px;
+  width: 200px;
+}
+
+.prod2 {
+  border: 2px solid #fff;
+
+}
+
+.prod3 {
+  border: 2px solid #fff;
+
+}
+
+.prod4 {
+  border: 2px solid #fff;
+
+}
+
+.prod5 {
+  border: 2px solid #fff;
+
+}
+
+.prod6 {
+  border: 2px solid #fff;
+
+}
+
+.prod7 {
+  border: 2px solid #fff;
+
+}
+
+.prod8 {
+  border: 2px solid #fff;
+
+}
+
+.prod9 {
+  border: 2px solid #fff;
+
+}
+.prod10 {
+  border: 2px solid #fff;
+
+}*/

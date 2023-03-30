@@ -18,7 +18,7 @@
     <div class="navBar">  
     <img class="logo" src="./assets/logo-black.png" alt="Novas logo">
       <nav>
-        <ul class="menu">
+        <ul>
           <li><a href="./index.html">HOME</a></li>
           <li><a href="#blog">BLOG</a></li>
           <li><a href="./contact.html">CONTACT US</a></li>
@@ -33,30 +33,129 @@
     </div>
   </header> 
 
-  <main>
-    <!--wrapper-->
-    <section class="gallery" id="gallery">
-		<h2>Featured Sale</h2>
-				<ul>
-					<li><img src="./assets/prod-1.jpg" alt="malm chair"></li>
-          <li><img src="./assets/prod-2.jpg" alt="malm side table"></li>
-          <li><img src="./assets/prod-3.jpg" alt="magnolia ottoman"></li>
-          <li><img src="./assets/prod-4.jpg" alt="malm chair"></li>
-          <li><img src="./assets/prod-5.jpg" alt="pendant lamp"></li>
-          <li><img src="./assets/prod-6.jpg" alt="throw pillow"></li>
-          <li><img src="./assets/prod-7.jpg" alt="printed blanket"></li>
-          <li><img src="./assets/prod-8.jpg" alt="side chair"></li>
-          <li><img src="./assets/prod-9.jpg" alt="candle"></li>
-          <li><img src="./assets/prod-10.jpg" alt="pendant lamp"></li>
-				</ul>
-			</div> <!-- ./wrapper-->
-		</section>
+  <main id="mainContent">
+    <!--don't forget the wrapper, should there be an id?-->
+    <div class="wrapper">
 
+        <section class="category">    
+         
+              <div class="cat1">
+                <img src="./assets/cat-1.jpg" alt="plants">
+              </div>
+
+              <div class="cat2">
+                <img src="./assets/cat-2.jpg" alt="furniture">
+              </div>
+
+              <div class="cat3">
+                <img src="./assets/cat-3.jpg" alt="furniture">
+              </div>
+               
+        </section>
+
+    
+          <section class="featured" id="featured">
+              <h2>Featured Sale</h2>
+              <ul class="featuredGallery">
+                <li class="product prodOne">
+                  <a href="">
+                    <img src="./assets/safari-trio.jpg" alt="Hand-carved safari animal toys">
+                    <h4>Malm Chair</h4>
+                    <h5><span>$35</span>>  $22</h5>
+                  </a>
+                </li>
+                <li class="items itemTwo">
+                  <a href=""><img src="./assets/ocean.jpg" alt="A collection of ocean-themed animal toys">
+                    <h4>Ocean</h4>
+                    <p>Adorable aquatic characters</p>
+                  </a>
+                </li>
+                <li class="items itemThree">
+                  <a href="">
+                    <img src="./assets/dinos.jpg" alt="Hand-carved dinosaur toys for kids">
+                    <h4>Dinos</h4>
+                    <p>Meet these Prehistoric Pals</p>
+                  </a>
+                </li>
+                <li class="items itemFour">
+                  <a href="">
+                    <img src="./assets/sale.jpg" alt="A toddler pulling two wooden animals on wheels">
+                    <h4>Sale</h4>
+                    <p>Act quickly and grab these bargains</p>
+                  </a>
+                </li>
+              </ul> 
+            </div> 
+          </section>
+      
+      
+
+        <button>View All</button>
+
+        <section class="sale">
+          <div class="sale1"><img src="./assets/vert1.jpg" alt="Sale fifty percent off"></div>
+          <div class="sale2"><img src="./assets/vert2.jpg" alt="Sale thirty percent off"></div>
+        </section>
+        
+        <div class="igfeed">
+          <h2>Follow Instagram</h2>
+          <a href="#"><h3>@Novas_shop</h3></a>
+            <ul>
+              <li><img src="./assets/ig1.jpg" alt="instagram photo"></li>
+              <li><img src="./assets/ig2.jpg" alt="instagram photo"></li>
+              <li><img src="./assets/ig3.jpg" alt="instagram photo"></li>
+              <li><img src="./assets/ig4.jpg" alt="instagram photo"></li>
+              <li><img src="./assets/ig5.jpg" alt="instagram photo"></li>
+            </ul>
+        </div>
+    </div>
+
+    
   </main>
 
-  <footer>
+      <footer id="footerContainer">
+        <div class="wrapper">
+          <div class="footerFlexContainer">
+            <div class="footerNav">
 
-  </footer>
+              <nav>
 
+                <ul class="footerAbout">
+                  <li><a href="./assets/logo-white.png"></a></li> 
+                  <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque eaque animi debitis esse nam.</p></li>
+                  <li><a href="./assets/icons/facebook.svg"></a></li>
+                  <li><a href="./assets/icons/twitter.svg"></a></li>
+                  <li><a href="./assets/icons/instagram.svg"></a></li>
+                </ul>
+
+                <ul class="footerContact">
+                  <li><h5>Contact</h5></li>
+                  <li><a href="./assets/icons/address.svg">40 Baria Street</a></li>
+                  <li><a href="./assets/icons/telephone.svg">158-366-6666</a></li>
+                  <li><a href="./assets/icons/email.svg">cool@example.com</a></li>
+                  <li><a href="./assets/icons/globe.svg">www.novas.com</a></li>
+                </ul>
+
+                <ul class="footerProfile">
+                  <li><h5>Profile</h5></li>
+                  <li><a href="./assets/icons/user.svg">My Account</a></li>
+                  <li><a href="./assets/icons/checkout.svg">Checkout</a></li>
+                  <li><a href="./assets/icons/tracking.svg">Order Tracking</a></li>
+                  <li><a href="./assets/icons/support.svg">Help & Support</a></li>
+                </ul>
+
+                <ul class="footerNewsletter">
+                  <li>Subscribe to our newletter</li>
+                  <li>___________________________________</li>
+                  <li>@ 2023 Novas.</li>
+                </ul>
+
+              </nav>
+
+            </div> <!-- .footerNav END -->
+          </div> <!-- .footerFlexContainer END-->
+        </div> <!-- .wrapper END-->
+      </footer>
+    
 </body>
 </html>

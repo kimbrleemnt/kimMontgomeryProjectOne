@@ -1,3 +1,5 @@
+@use './html';
+
 header {
   height: 100vh;
   background-image: url('./../assets/home.jpg');
@@ -7,9 +9,14 @@ header {
 
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .navBar {
-
-
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,28 +31,30 @@ header {
 
 }
 
-.menu {
-    
+nav {
 
       li {
         display: inline;
-        
+        justify-content: center;
+        align-items: center;
+                
 
         a {
-          float: left;
+         
+          color: #333;
           padding: 12px;
-          font-size: 1rem;
+          font-size: .75rem;
           text-decoration: none;
 
 
-      }
+        }
+    }
   }
-}
 
-.navBar a:hover {
+.menu a:hover {
   border-bottom-width: 4px;
   border-bottom-color: #333;
-  border-bottom-style:ridge;
+
   
 
 }
