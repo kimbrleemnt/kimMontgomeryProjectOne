@@ -1,0 +1,18 @@
+/*this sheet will have all the styling for the whole sheet, so the wrapper, the font family if it's consistent, etc.*/
+@import "./variables";
+
+html {
+  font-family: "poppins";
+  font-weight: 400px;
+  font-size: 125%; /*root element font-size set to 125%, aka 1 rem = 20px */
+  color: $primary;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+ul {
+  list-style: none;
+}

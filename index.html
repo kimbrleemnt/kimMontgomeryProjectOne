@@ -10,96 +10,86 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="styles/style.css">
  
-
 </head>
+
 <body>
 
   <header>
-    <div class="navBar">  
-    <img class="logo" src="./assets/logo-black.png" alt="Novas logo">
-      <nav>
-        <ul>
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="#blog">BLOG</a></li>
-          <li><a href="./contact.html">CONTACT US</a></li>
-        </ul>
-      </nav>
-      <img class="checkout" src="./assets/icons/shopping-cart-black-icon.png" alt="checkout icon">
-    </div>
 
-    <div class="about">
-    <h1>NOVAS Boutique Shop</h1> 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, magnam inventore ipsa similique nulla itaque quidem quis voluptates voluptate at libero repellat animi quo in minima ipsum minus velit qui!</p>
-    </div>
+    <div class="topBar">  
+
+      <a href="./index.html" class="logo">
+        <img src="./assets/logo-black.png" alt="Novas logo" class="novasLogo">
+      </a>
+
+        <nav>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="./contact.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+        
+        <div class="shoppingCart">
+
+              <a href="#">
+                <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping cart icon" class="cartIcon">
+              </a>  
+
+        </div> 
+      </div>
+  
+
+
+        <h1>NOVAS Boutique Shop</h1> 
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, magnam inventore ipsa similique nulla itaque quidem quis voluptates voluptate at libero repellat animi quo in minima ipsum minus velit qui!</p>
+
   </header> 
 
-  <main id="mainContent">
-    <!--don't forget the wrapper, should there be an id?-->
-    <div class="wrapper">
-
-        <section class="category">    
+  <main>
+    <section class="categories" id="categories">    
+          <div class="wrapper">
          
-              <div class="cat1">
-                <img src="./assets/cat-1.jpg" alt="plants">
-              </div>
+              <ul class="categoryGallery">
 
-              <div class="cat2">
-                <img src="./assets/cat-2.jpg" alt="furniture">
-              </div>
+                <li><img src="./assets/cat-1.jpg" alt="plants" class="plants"><h3><span>- Plants</span></h3></li>
+                <li><img src="./assets/cat-2.jpg" alt="furniture" class="furniture"><h3><span>- Furniture</span></h3></li>
+                <li><img src="./assets/cat-3.jpg" alt="decoration" class="decoration"><h3><span>- Decoration</span></h3></li>
 
-              <div class="cat3">
-                <img src="./assets/cat-3.jpg" alt="furniture">
-              </div>
-               
-        </section>
+              </ul>
+
+            <div><!-- end of wrapper-->
+        </section> <!--end of categories section-->
 
     
           <section class="featured" id="featured">
               <h2>Featured Sale</h2>
               <ul class="featuredGallery">
-                <li class="product prodOne">
-                  <a href="">
-                    <img src="./assets/safari-trio.jpg" alt="Hand-carved safari animal toys">
-                    <h4>Malm Chair</h4>
-                    <h5><span>$35</span>>  $22</h5>
-                  </a>
+                <li class="products prodOne">
+                  <h3><span>  SALE  </span></h3>
+                  <h4>Malm Chair</h4>
+                  <h5><span>$35</span>  $22</h5>
+                  
                 </li>
-                <li class="items itemTwo">
-                  <a href=""><img src="./assets/ocean.jpg" alt="A collection of ocean-themed animal toys">
-                    <h4>Ocean</h4>
-                    <p>Adorable aquatic characters</p>
-                  </a>
-                </li>
-                <li class="items itemThree">
-                  <a href="">
-                    <img src="./assets/dinos.jpg" alt="Hand-carved dinosaur toys for kids">
-                    <h4>Dinos</h4>
-                    <p>Meet these Prehistoric Pals</p>
-                  </a>
-                </li>
-                <li class="items itemFour">
-                  <a href="">
-                    <img src="./assets/sale.jpg" alt="A toddler pulling two wooden animals on wheels">
-                    <h4>Sale</h4>
-                    <p>Act quickly and grab these bargains</p>
-                  </a>
-                </li>
+               
               </ul> 
+
+        <button>View All</button>
             </div> 
           </section>
       
       
 
-        <button>View All</button>
 
-        <section class="sale">
+        <section class="sale" id="sale">
           <div class="sale1"><img src="./assets/vert1.jpg" alt="Sale fifty percent off"></div>
           <div class="sale2"><img src="./assets/vert2.jpg" alt="Sale thirty percent off"></div>
         </section>
         
-        <div class="igfeed">
+        <section class="igFeed" id="igFeed">
+          <div class="wrapper">
           <h2>Follow Instagram</h2>
-          <a href="#"><h3>@Novas_shop</h3></a>
+          <a href="#"><h3>@novas_shop</h3></a>
             <ul>
               <li><img src="./assets/ig1.jpg" alt="instagram photo"></li>
               <li><img src="./assets/ig2.jpg" alt="instagram photo"></li>
@@ -107,13 +97,12 @@
               <li><img src="./assets/ig4.jpg" alt="instagram photo"></li>
               <li><img src="./assets/ig5.jpg" alt="instagram photo"></li>
             </ul>
-        </div>
-    </div>
-
+        </div><!--end of wrapper-->
+      </section><!--end of instaFeed section-->
     
   </main>
 
-      <footer id="footerContainer">
+     <footer>
         <div class="wrapper">
           <div class="footerFlexContainer">
             <div class="footerNav">
@@ -152,9 +141,9 @@
 
               </nav>
 
-            </div> <!-- .footerNav END -->
-          </div> <!-- .footerFlexContainer END-->
-        </div> <!-- .wrapper END-->
+            </div> <!--.footerNav END -->
+          </div>  <!--.footerFlexContainer END-->
+        </div>  <!--.wrapper END-->
       </footer>
     
 </body>

@@ -1,81 +1,71 @@
-@use "./html";
+/*Categories*/
 
 
-wrapper {
-
-  max-width: 1080px;
-
-}
-
-
-.category {
-  display: inline-block;
+.categoryGallery {
+  display: flex;
   justify-content: center;
 
+  
+        img {
+          
+          height: 400px;
+          width: 250px;
+
+  }
+
 }
 
-.category img {
-  height: 400px;
-  width: 250px;
-  margin: 20px;
+.plants h3 {
+    background: #eba6aa;
+    color: #fff;
+    font-size: small;
+    padding: 5px;
 }
- 
 
-h2 {
+
+/*Featured Sale*/
+
+.featured h2 {
   text-align: center;
   margin-bottom: 40px;
 
   }
   
-
-.gallery {
+.featuredGallery ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
-    }
+              li {
+                list-style: none;
+              
 
-.gallery img {
-  border: 2px solid #66666658;
+              a {
+                list-style: none;
+
+              }
+            }
+
+}
+
+
+
+
+.prodOne {
+  border: 2px #66666639 solid;
+  background-image: url(/assets/prod-1.jpg);
+  background-size: contain;
   height: 300px;
   width: 200px;
-  margin: 10px;
-  padding-bottom: 40px;
- 
-
 }
-
-.productcard1 {
-  position: relative;
-}
-
-.descAbsolute {
-  background: palegreen;
-  width: 175px;
-  padding: 10px;
-  margin: 0;
-  text-align: center;
-  font-size: 1.2rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-
-}
-
-/*.gallery img {
-      border: 2px solid #66666658;
-      height: 300px;
-      width: 200px;
-      margin: 10px;
-      padding-bottom: 40px;
-      
+  
+  .prodOne h3 span {
+    background: #eba6aa;
+    color: #fff;
+    font-size: small;
+    padding: 5px;
   }
-
-.product1.checkoutimage1 {
-  width: 10px;
-  height: 10px;
-    
-  }*/
+  
 
 .igfeed h2 {
     text-align: center;

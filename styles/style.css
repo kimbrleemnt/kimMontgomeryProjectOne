@@ -226,29 +226,31 @@ html {
   overflow: hidden;
 }
 
-/*this sheet will have all the css for the whole sheet, so the wrapper, the font family if it's consistent, etc.*/
+/*this sheet will have all the styling for the whole sheet, so the wrapper, the font family if it's consistent, etc.*/ /* _variables site colour palette */
 html {
-  font-family: "Poppins, Medium", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
+  font-family: "poppins";
+  font-weight: 400px;
+  font-size: 125%; /*root element font-size set to 125%, aka 1 rem = 20px */
   color: #333;
   margin: 0;
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+/* _variables site colour palette */
 header {
   height: 100vh;
-  background-image: url("./../assets/home.jpg");
-  background-size: cover;
-}
-
-nav {
-  position: fixed;
-  top: 0;
   width: 100%;
+  background-image: url("./../assets/home.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.navBar {
+.topBar {
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,108 +260,90 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fff;
-  height: 85px;
-  width: 100%;
-  padding: 0 60px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
-.logo {
-  cursor: pointer;
+.novasLogo {
+  height: 25px;
+  width: 125px;
 }
 
-nav li {
-  display: inline;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-nav li a {
-  color: #333;
-  padding: 12px;
-  font-size: 0.75rem;
-  text-decoration: none;
-}
-
-.menu a:hover {
-  border-bottom-width: 4px;
-  border-bottom-color: #333;
-}
-
-.checkout {
-  cursor: pointer;
-}
-
-.about {
-  padding-left: 20%;
-  padding-right: 60%;
-}
-
-h1 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin: 0;
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+nav ul li {
+  padding-right: 30px;
+}
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.cartIcon {
+  height: 30px;
+  width: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "poppins";
+  font-weight: 500; /*font-weight set h1 heading is too bold for the design*/
+  padding: 80px 800px 0 300px;
+  margin-bottom: 0;
 }
 
 p {
   font-size: 0.75rem;
   line-height: 1.25;
-  font-family: "poppins, regular", sans-serif;
-  margin: 0;
+  font-family: "poppins";
+  font-weight: 400;
+  padding: 0 750px 0 300px;
+}
+
+/*@media (max-width: 768px) {
+  header {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}*/
+/*Categories*/
+.categoryGallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-wrapper {
-  max-width: 1080px;
-}
-
-.category {
-  display: inline-block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.category img {
+.categoryGallery img {
   height: 400px;
   width: 250px;
-  margin: 20px;
 }
 
-h2 {
+.plants h3 {
+  background: #eba6aa;
+  color: #fff;
+  font-size: small;
+  padding: 5px;
+}
+
+/*Featured Sale*/
+.featured h2 {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.gallery {
+.featuredGallery ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,45 +353,28 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.featuredGallery ul li {
+  list-style: none;
+}
+.featuredGallery ul li a {
+  list-style: none;
+}
 
-.gallery img {
-  border: 2px solid rgba(102, 102, 102, 0.3450980392);
+.prodOne {
+  border: 2px rgba(102, 102, 102, 0.2235294118) solid;
+  background-image: url(/assets/prod-1.jpg);
+  background-size: contain;
   height: 300px;
   width: 200px;
-  margin: 10px;
-  padding-bottom: 40px;
 }
 
-.productcard1 {
-  position: relative;
+.prodOne h3 span {
+  background: #eba6aa;
+  color: #fff;
+  font-size: small;
+  padding: 5px;
 }
 
-.descAbsolute {
-  background: palegreen;
-  width: 175px;
-  padding: 10px;
-  margin: 0;
-  text-align: center;
-  font-size: 1.2rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-/*.gallery img {
-      border: 2px solid #66666658;
-      height: 300px;
-      width: 200px;
-      margin: 10px;
-      padding-bottom: 40px;
-
-  }
-
-.product1.checkoutimage1 {
-  width: 10px;
-  height: 10px;
-
-  }*/
 .igfeed h2 {
   text-align: center;
   margin: 0 auto;
@@ -491,21 +458,7 @@ h2 {
   border: 2px solid #fff;
 
 }*/
-/*
-
-featured sale
-
-  .prod {
-  width: 300px;
-  height: 50px;
-  padding: 10px;
-  color: #f8a;
+footer {
+  background-color: #333;
+  color: #fff;
 }
-
-.prod 1 {
-  color: #pink;
-}
-.prod 3 {
-  color: #blue;
-}
-}*/
