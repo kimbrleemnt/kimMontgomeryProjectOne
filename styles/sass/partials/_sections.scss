@@ -1,27 +1,78 @@
 /*Categories*/
 
+main {
+  section {
+    margin-bottom: 90px;
+  }
+}
+
+.categories {
+
+}
 
 .categoryGallery {
+
   display: flex;
   justify-content: center;
+  align-items: center;
+
+
+}
+
+.cat {
+  margin: 0;
+}
+
+.cat img {
+  height: 400px;
+  width: 100%;
 
   
-        img {
+}
+
+.catOne {
+  position: relative;
+  margin-right: 30px;
+
+}
+
+.catTwo {
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
+ 
+  
+
+}
+
+.catThree {
+  position: relative;
+
+  
+
+}
+
+
+
+
+.cat h3 {
+  position: absolute;
+  bottom: 20px;
+  font-size: 12px;
+  margin: 0;
+
+
+}
+
+.cat h3 span {
+  background: #fff;
+  color: #333;
+  font-weight: 400;
+  padding: 5px 10px;
+}
+
           
-          height: 400px;
-          width: 250px;
-
-  }
-
-}
-
-.plants h3 {
-    background: #eba6aa;
-    color: #fff;
-    font-size: small;
-    padding: 5px;
-}
-
+          
 
 /*Featured Sale*/
 
