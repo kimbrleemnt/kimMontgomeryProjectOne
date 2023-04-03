@@ -40,25 +40,21 @@ main {
 
 }
 
-
-
 .cat h3 {
   position: absolute;
   bottom: 20px;
   font-size: 12px;
   margin: 0;
 
-
 }
 
 .cat h3 span {
-  background: #fff;
-  color: #333;
+  background: $secondary;
+  color: $primary;
   font-weight: 400;
   padding: 5px 10px;
 }
-
-          
+       
           
 
 /*Featured Sale Section*/
@@ -68,6 +64,7 @@ main {
   text-align: center;
   font-weight: 500;
   font-size: 2rem;
+  margin-bottom: 60px;
 
   
 }
@@ -114,7 +111,6 @@ main {
 }
   
 
-
 .product h3 span {
 
     color: #fff;
@@ -125,22 +121,22 @@ main {
     top: 10px;
     margin: 0;
     letter-spacing: 1px;
-    background: #eba6aa;
+    background: $sale;
 
   }
 
   .prodThree h3 span {
-    background: #88cce2;
+    background: $new;
 
   }
   
   .product h4 {
     font-weight: 500;
-    color:#333;
+    color: $primary;
     position: absolute;
     bottom: 40px;
     left: 16px;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0 0 -5px 0;
     
   }
@@ -162,11 +158,13 @@ main {
   }
 
 .buttonOne {
-  background-color: white;
+ position: relative;
+ left: 44%;
+  background-color: $secondary;
   border: 2px #666666a5 solid;
   padding: 16px 32px;
   font-size: 14px;
-  margin: auto;
+  margin-top: 40px;
   text-align: center;
   transition-duration: 0.4s; /*https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover*/
   cursor: pointer;
@@ -178,34 +176,126 @@ main {
     border: 2px #666 solid;
     color: white;
 
+    &:focus {
+      background-color: #666; 
+      border: 2px #666 solid;
+      color: white;
+
+    }
+
   }
+
+ 
  
   
 
 /*Sale Section*/
 
-.saleGallery .sale {
+.saleGallery {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 
 }
 
+.sale {
+    margin: 0;
+    position: relative;
+  }
+
+
 .saleOne img {
+  width: auto;
+  height: auto;
+  max-width: 400px;
+  max-height: 500px;
+  margin-right: 20px;
 
+    @mixin faded($offset, $blur-radius, $spread-radius) 
+    { 
+      &.faded-all::before, &.faded-left.faded-top.faded-right.faded-bottom:after {
+      box-shadow: inset 0 0 $blur-radius 
+      $spread-radius;
+  }
+}
 
-  height: 100%;
-  width: 200px;
+$faded-offset: 40px !default;
+$faded-blur-radius: 40px !default;
+$faded-spread-radius: 16px !default;
 
 }
 
 .saleTwo img {
 
-  height: 100%;
-  width: 400px;
-
+  width: auto;
+  height: auto;
+  max-width: 700px;
+  max-height: 500px;
 }
 
 
+.saleOne h3 {
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  margin: 0;
+  color: #d7b89c;
+  font-weight: 400;
+  padding: 2px 16px;
+  background: $secondary;
+
+
+}
+
+.saleOne p {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 41px;
+  margin: 0;
+  color: $secondary;
+  font-weight: 800;
+  
+}
+
+.saleOne button {
+  position: absolute;
+  top: 89%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  margin: 0;
+  color: $secondary;
+  font-weight: 500;
+  border: none;
+  background: none;
+ 
+  
+}
+
+.saleTwo p {
+  position: absolute;
+  top: 58px;
+  left: 150px;
+  padding: 20px 30px;
+  font-size: 25px;
+  margin: 0;
+  color: $secondary;
+  font-weight: 500;
+  text-align: center;
+  border: 3px #ffffff59 solid;
+
+}
+ 
+  .saleTwo p span {
+    color: $secondary;
+    font-weight: 800;
+    font-size: 40px;
+
+
+}
 
 
 /*Instagram Section*/

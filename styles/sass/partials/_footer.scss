@@ -133,11 +133,11 @@ align-items: center;
 
 }
 
-  input{
+.footerNewsletter input{
     margin: 20px 0 20px 0;
   }
 
-  input[type=text] {
+  .footerNewsletter input[type=text] {
     width: 200px;
     border: none;
     color: $secondary;

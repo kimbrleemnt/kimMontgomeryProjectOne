@@ -1,34 +1,121 @@
-@use "./variables";
+@import "./variables";
 
 
-.contactForm .input {
-  display: inline-block;
+
+.contactForm ul {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 21%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
 
 }
 
+.contactForm li {
+  margin-bottom: 40px;
+}
 
-.contactForm .input[type=text] {
- 
+
+
+input[type=text] {
+
+  width: 600px;
+  border: none;
+  color: $primary;
+  border-bottom: 1px $primary solid;
+  font-family: "poppins";
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+}
+
+.contactForm input[type=email] {
+  width: 600px;
+  border: none;
+  color: $primary;
+  border-bottom: 1px $primary solid;
+  font-family: "poppins";
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+}
+
+.contactForm textarea {
+  width: 600px;
+  border: none;
+  color: $primary;
+  border-bottom: 1px $primary solid;
+  font-family: "poppins";
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+}
+
+  .contactForm button {
+
+       background-color: $secondary;
+       border: 2px #666666a5 solid;
+       padding: 16px 32px;
+       font-size: 14px;
+       text-align: center;
+       transition-duration: 0.4s; 
+       cursor: pointer;
+}
+     
+       .contactForm button:hover {
+         background-color: #666; 
+         border: 2px #666 solid;
+         color: white;
+     
+         &:focus {
+           background-color: #666; 
+           border: 2px #666 solid;
+           color: white;
+     
+         }
+        }
+
+     
+  
+
+/*.inputText {
+
   border: none;
   color: $secondary;
-  background-color: $primary;
-  border-bottom: 1px $secondary solid;
+  border-bottom: 1px $primary solid;
+  padding: 4px 0;
+  transition: .3s ease-in-out;
+  margin: 20px 0;
+
+}
+
+.inputText:focus {
+  outline: none;
+  padding: 4px 8px;
+  border-radius: 12;  
+  border-bottom: 1px $primary solid;
+}
+
+.inputText::placeholder {
+  color: $primary;
+  transition: .3s;
   font-family: "poppins";
   font-size: 10px;
   line-height: 1.5rem;
-
-
 }
 
-.contactForm .input[type=email] {
-  width: 200px;
-  border: none;
-  color: $secondary;
-  background-color: $primary;
-  border-bottom: 1px $secondary solid;
-  font-family: "poppins";
-  font-size: 10px;
-  line-height: 1.5rem;
+
+.inputEmail {
+  border: 1px solid transparent;
+  border-bottom: 1px $primary solid;
+  padding: 4px 0;
+  outline-style: none;
+  transition: 3s ease-in-out;
 
 
-}
+
+
+}*/
+

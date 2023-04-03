@@ -261,9 +261,9 @@ header {
   background-repeat: no-repeat;
 }
 header.contactHeader {
-  height: 60vh;
+  height: 30vh;
   background-image: url("./../assets/contact-us.jpg");
-  background-position-y: 40px;
+  background-position: bottom;
 }
 
 .topBar {
@@ -389,6 +389,7 @@ main section {
   text-align: center;
   font-weight: 500;
   font-size: 2rem;
+  margin-bottom: 60px;
 }
 
 .featuredGallery {
@@ -454,7 +455,7 @@ main section {
   position: absolute;
   bottom: 40px;
   left: 16px;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0 0 -5px 0;
 }
 
@@ -473,11 +474,13 @@ main section {
 }
 
 .buttonOne {
-  background-color: white;
+  position: relative;
+  left: 44%;
+  background-color: #fff;
   border: 2px rgba(102, 102, 102, 0.6470588235) solid;
   padding: 16px 32px;
   font-size: 14px;
-  margin: auto;
+  margin-top: 40px;
   text-align: center;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s; /*https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover*/
@@ -489,26 +492,99 @@ main section {
   border: 2px #666 solid;
   color: white;
 }
+.buttonOne:hover:focus {
+  background-color: #666;
+  border: 2px #666 solid;
+  color: white;
+}
 
 /*Sale Section*/
-.saleGallery .sale {
+.saleGallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sale {
+  margin: 0;
+  position: relative;
 }
 
 .saleOne img {
-  height: 100%;
-  width: 200px;
+  width: auto;
+  height: auto;
+  max-width: 400px;
+  max-height: 500px;
+  margin-right: 20px;
 }
 
 .saleTwo img {
-  height: 100%;
-  width: 400px;
+  width: auto;
+  height: auto;
+  max-width: 700px;
+  max-height: 500px;
+}
+
+.saleOne h3 {
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 14px;
+  margin: 0;
+  color: #d7b89c;
+  font-weight: 400;
+  padding: 2px 16px;
+  background: #fff;
+}
+
+.saleOne p {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 41px;
+  margin: 0;
+  color: #fff;
+  font-weight: 800;
+}
+
+.saleOne button {
+  position: absolute;
+  top: 89%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 16px;
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  background: none;
+}
+
+.saleTwo p {
+  position: absolute;
+  top: 58px;
+  left: 150px;
+  padding: 20px 30px;
+  font-size: 25px;
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  border: 3px rgba(255, 255, 255, 0.3490196078) solid;
+}
+
+.saleTwo p span {
+  color: #fff;
+  font-weight: 800;
+  font-size: 40px;
 }
 
 /*Instagram Section*/
@@ -662,11 +738,11 @@ span img {
   font-size: 12px;
 }
 
-input {
+.footerNewsletter input {
   margin: 20px 0 20px 0;
 }
 
-input[type=text] {
+.footerNewsletter input[type=text] {
   width: 200px;
   border: none;
   color: #fff;
@@ -676,3 +752,116 @@ input[type=text] {
   font-size: 10px;
   line-height: 1.5rem;
 }
+
+/*$bodyFont: */
+/*$headingFont: "Young Serif";
+$bodyFont: "Jakarta Sans";*/
+/* _variables site colour palette */
+.contactForm ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  left: 21%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.contactForm li {
+  margin-bottom: 40px;
+}
+
+input[type=text] {
+  width: 600px;
+  border: none;
+  color: #333;
+  border-bottom: 1px #333 solid;
+  font-family: "poppins";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.contactForm input[type=email] {
+  width: 600px;
+  border: none;
+  color: #333;
+  border-bottom: 1px #333 solid;
+  font-family: "poppins";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.contactForm textarea {
+  width: 600px;
+  border: none;
+  color: #333;
+  border-bottom: 1px #333 solid;
+  font-family: "poppins";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.contactForm button {
+  background-color: #fff;
+  border: 2px rgba(102, 102, 102, 0.6470588235) solid;
+  padding: 16px 32px;
+  font-size: 14px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.contactForm button:hover {
+  background-color: #666;
+  border: 2px #666 solid;
+  color: white;
+}
+.contactForm button:hover:focus {
+  background-color: #666;
+  border: 2px #666 solid;
+  color: white;
+}
+
+/*.inputText {
+
+  border: none;
+  color: $secondary;
+  border-bottom: 1px $primary solid;
+  padding: 4px 0;
+  transition: .3s ease-in-out;
+  margin: 20px 0;
+
+}
+
+.inputText:focus {
+  outline: none;
+  padding: 4px 8px;
+  border-radius: 12;  
+  border-bottom: 1px $primary solid;
+}
+
+.inputText::placeholder {
+  color: $primary;
+  transition: .3s;
+  font-family: "poppins";
+  font-size: 10px;
+  line-height: 1.5rem;
+}
+
+
+.inputEmail {
+  border: 1px solid transparent;
+  border-bottom: 1px $primary solid;
+  padding: 4px 0;
+  outline-style: none;
+  transition: 3s ease-in-out;
+
+
+
+
+}*/
