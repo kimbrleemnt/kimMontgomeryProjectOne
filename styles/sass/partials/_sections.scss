@@ -1,3 +1,5 @@
+@import "./variables";
+
 /*Categories*/
 
 main {
@@ -6,9 +8,6 @@ main {
   }
 }
 
-.categories {
-
-}
 
 .categoryGallery {
 
@@ -21,37 +20,25 @@ main {
 
 .cat {
   margin: 0;
+  position: relative;
 }
 
 .cat img {
   height: 400px;
   width: 100%;
 
-  
 }
 
 .catOne {
-  position: relative;
   margin-right: 30px;
 
 }
 
 .catTwo {
-  position: relative;
   margin-right: 30px;
   margin-bottom: 30px;
- 
-  
 
 }
-
-.catThree {
-  position: relative;
-
-  
-
-}
-
 
 
 
@@ -74,137 +61,191 @@ main {
           
           
 
-/*Featured Sale*/
+/*Featured Sale Section*/
+
 
 .featured h2 {
   text-align: center;
-  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 2rem;
 
-  }
   
-.featuredGallery ul {
+}
+
+
+
+.featuredGallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-
-              li {
-                list-style: none;
-              
-
-              a {
-                list-style: none;
-
-              }
-            }
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 
 }
 
-
-
-
-.prodOne {
-  border: 2px #66666639 solid;
-  background-image: url(/assets/prod-1.jpg);
+.product {
+  position: relative;
+  margin: 0;
+  border: .5px #6666661b solid;
+  margin: 0 20px 20px 0; 
   background-size: contain;
+  background-repeat: none;
   height: 300px;
   width: 200px;
+  
+}
+
+.product img {
+  height: 250px;
+  width: 100%;
+}
+
+.product span img {
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+  border: .5px #6666661b solid;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+
+
+
 }
   
-  .prodOne h3 span {
-    background: #eba6aa;
+
+
+.product h3 span {
+
     color: #fff;
-    font-size: small;
-    padding: 5px;
+    font-size: x-small;
+    font-weight: 400;
+    padding: 2px 4px;
+    position: absolute;
+    top: 10px;
+    margin: 0;
+    letter-spacing: 1px;
+    background: #eba6aa;
+
+  }
+
+  .prodThree h3 span {
+    background: #88cce2;
+
+  }
+  
+  .product h4 {
+    font-weight: 500;
+    color:#333;
+    position: absolute;
+    bottom: 40px;
+    left: 16px;
+    font-size: 16px;
+    margin: 0 0 -5px 0;
+    
+  }
+
+  .product h5 {
+    font-weight: 400;
+    color: #666;
+    position: absolute;
+    bottom: 15px;
+    left: 16px;
+    font-size: 12px;
+    margin: 0;
   }
   
 
-.igfeed h2 {
-    text-align: center;
-    margin: 0 auto;
+  .product h5 span {
+    text-decoration: line-through;
   
   }
 
-.igfeed h3 {
+.buttonOne {
+  background-color: white;
+  border: 2px #666666a5 solid;
+  padding: 16px 32px;
+  font-size: 14px;
+  margin: auto;
   text-align: center;
-  margin-bottom: 40px;
-  text-decoration: none;
+  transition-duration: 0.4s; /*https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover*/
   cursor: pointer;
 
-}
-
-
-
-.igfeed {
-  display: inline-block;
-
-  justify-content: center;
-
-
-      li {
-        
-        list-style: none;
-
-      }
-}
-
-  .igfeed img {
-    height: 100px;
-    width: 100px;
-    margin: 10px;
   }
 
-/*.prod {
-  width: 100px;
-  height: 100px;
-  margin: 5px;
+.buttonOne:hover {
+    background-color: #666; 
+    border: 2px #666 solid;
+    color: white;
+
+  }
+ 
+  
+
+/*Sale Section*/
+
+.saleGallery .sale {
+  display: flex;
+  flex-direction: row;
+
 }
 
-.prod1 {
-  border: 2px solid #666;
-  height: 300px;
+.saleOne img {
+
+
+  height: 100%;
   width: 200px;
-}
-
-.prod2 {
-  border: 2px solid #fff;
 
 }
 
-.prod3 {
-  border: 2px solid #fff;
+.saleTwo img {
+
+  height: 100%;
+  width: 400px;
 
 }
 
-.prod4 {
-  border: 2px solid #fff;
+
+
+
+/*Instagram Section*/
+
+.igSection h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 5px;
+  
+  }
+
+.igSection h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #666;
+  font-weight: 500;
+  font-size: 1rem;
 
 }
 
-.prod5 {
-  border: 2px solid #fff;
+  .igSection a {
+  text-decoration: none;
+}
+
+.igFeed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+      li {
+        padding-right: 10px;
+
+
+      }
 
 }
 
-.prod6 {
-  border: 2px solid #fff;
-
+.igFeed img {
+  height: 150px;
+  width: 100%;
+  margin: 0;
 }
-
-.prod7 {
-  border: 2px solid #fff;
-
-}
-
-.prod8 {
-  border: 2px solid #fff;
-
-}
-
-.prod9 {
-  border: 2px solid #fff;
-
-}
-.prod10 {
-  border: 2px solid #fff;
-
-}*/

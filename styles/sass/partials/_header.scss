@@ -10,7 +10,9 @@ header {
 
         &.contactHeader {
           
-            background-image: url('./../assets/contact-us.jpg');
+          height: 60vh;
+          background-image: url('./../assets/contact-us.jpg');
+          background-position-y: 40px;
 
 
         }
@@ -22,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 60px;
+  padding: 20px 60px;
 
 
 }
@@ -45,23 +47,19 @@ nav ul {
         a {
           color: $primary;
           text-decoration: none;
-          font-size: .75rem;
+          font-size: 0.9rem;
           font-weight: 500;
 
           &:hover {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 50px;
-            height: 1px;
-            background: #333;
+            border-bottom: 1px $primary solid;
+
+
 
           }
 
-          }
         }
-      }
+    }
+}
 
 .cartIcon {
   height: 30px;
@@ -69,7 +67,7 @@ nav ul {
 }
 
 h1 {
-  display: block;
+
   font-size: 3rem;
   font-family: "poppins";
   font-weight: 500; /*font-weight set h1 heading is too bold for the design*/
@@ -81,12 +79,12 @@ h1 {
 }
 
 
-p {
+header p {
   font-size: 0.75rem;
   line-height: 1.25;
   font-family: "poppins";
   font-weight: 400;
-  padding: 0 850px 0 300px;
+  padding: 20px 850px 0 300px;
 }
 
 

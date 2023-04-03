@@ -45,25 +45,77 @@
 
         </header>
 
-          <main class="contact mainContent">
+  <main>
              
-        <div class="wrapper">
-              <form class="contactForm" name="contactForm">
+              <div class="contactForm">
 
-                <label for="name" class="sr-only">Your Name</label>
                 <input type="text" id="name" placeholder="Your Name">
         
-                <label for="email" class="sr-only">Your Email</label>
                 <input type="email" id="email" placeholder="Your Email">
         
-                <label for="message" class="sr-only">Your Message</label>
+
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
         
-                <button>Submit</button>
-              </form>
-        </div>        
+                <button type="submit">Submit</button>
+ 
+              </div>
+     
                   
-        </main>
-
+  </main>
+        <footer>
+          <div class="wrapper">
+            <div class="footerFlexContainer">
+  
+                  <div class="sec footerAbout">
+                    <img src="./assets/logo-white.png">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque eaque animi.</p>
+                 
+                    <ul class="icon">  
+                      <li><a><img src="./assets/icons/facebook.svg"></a></li>
+                      <li><a><img src="./assets/icons/twitter.svg"></a></li>
+                      <li><a><img src="./assets/icons/instagram.svg"></a></li>
+                    </ul> <!--ul icon END-->   
+                  </div><!--.footerAbout END -->
+  
+                  <div class="sec footerContact">
+                    <h2>Contact</h2>
+                    <ul class="contact">
+                      <li><span><img src="./assets/icons/address.svg" alt="our address"></span><a href="address">40 Baria Street</a>/li>
+                    
+                      <li><span><img src="./assets/icons/telephone.svg" alt="phone us"></span><a href="tel:123456789">156-366-6666</a></li>
+                    
+                      <li><span><img src="./assets/icons/email.svg" alt="email us" class="email us"></span><a href="mailto:cool@example.com">cool@example.com</a></li>
+                    
+                      <li><span><img src="./assets/icons/globe.svg" alt="website" class="website"></span><a href="www.novas.com">www.novas.com</a></li>
+                    </ul> <!--ul Contact END-->
+                  </div><!--.footerContact END -->
+   
+  
+                  <div class="sec footerProfile">
+                      <h2>Profile</h2>
+                      <ul class="profile">
+                      <li><span><img src="./assets/icons/user.svg" alt="account"></span><a href="#">My Account</a></li>
+  
+                      <li><span><img src="./assets/icons/checkout.svg" alt="checkout"></span><a href="#">Checkout</a>></li>
+                      
+                      <li><span><img src="./assets/icons/tracking.svg" alt="order tracking"></span><a href="#">Order Tracking</a></li>
+                      
+                      <li><span><img src="./assets/icons/support.svg" alt="help"></span><a href="#">Help & Support</a></li>
+                      
+                      </ul>   <!--ul profile END-->
+                  </div> <!--.footerProfile END -->
+  
+  
+                  <div class="sec footerNewsletter">
+                      <h2>Newsletter</h2>
+                      <p>Subscribe to our newsletter</p>
+                      <input type="text" placeholder="Your email.">
+                      <p>@ 2023 Novas.</p>
+                  </div> <!--.footerNewsletter END -->
+                    
+  
+            </div>  <!--.footerFlexContainer END-->
+          </div>  <!--.wrapper END-->
+        </footer>
 </body>
 </html>
