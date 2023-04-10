@@ -1,0 +1,62 @@
+@import "./variables";
+
+#topBar {
+  position: sticky;
+  background-color: $secondary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  margin: 0;
+
+}
+
+#mainMenu {
+
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+
+
+
+      a {
+      color: $primary;
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding: 0 10px;
+
+
+      &:hover {
+        border-bottom: 1px $primary solid;
+
+            &:focus {
+              border-bottom: 1px $primary solid;
+        }
+      }
+    }
+  }
+
+sup {
+    vertical-align: text-top;
+  }
+
+
+
+.hamButton {
+  background-color: transparent;
+  border: 10px;
+  color: $primary;
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 52px;
+  float: left;
+  line-height: 70px;
+  display: none;
+}
+
+.hamButton:focus {
+  outline: none;
+}
+
+
+

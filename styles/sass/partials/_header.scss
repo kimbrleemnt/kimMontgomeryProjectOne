@@ -1,101 +1,47 @@
 @import "./variables";
 
-header {
+
+.indexHeader {
 
   height: 100vh;
   width: 100%;
   background-image: url('./../assets/home.jpg');
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 80px;
+}
 
-        &.contactHeader {
+.contactHeader {
           
-          height: 30vh;
+
+          height: 35vh;
+          width: 100%;
           background-image: url('./../assets/contact-us.jpg');
-          background-position: bottom;
-
-
+          background-size: auto;
+          background-position: top;
+          background-repeat: no-repeat;
 
 
 
         }
-    }
 
 
-.topBar {
-  background-color: $secondary;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-
+.headerContent {
+position: relative;
+top: 23%;
+left: -20%;
+height: 300px;
+width: 250px;
 
 }
 
-.novasLogo {
-
-  height: 25px;
-  width: 125px;
-
-}
-
-nav ul {
-  display: flex;
-
-  
-    li {
-      padding-right: 30px;
-      
-   
-        a {
-          color: $primary;
-          text-decoration: none;
-          font-size: 0.9rem;
-          font-weight: 500;
-
-          &:hover {
-            border-bottom: 1px $primary solid;
-
-
-
-          }
-
-        }
-    }
-}
-
-.cartIcon {
-  height: 30px;
-  width: 30px;
-}
-
-h1 {
-
-  font-size: 3rem;
-  font-family: "poppins";
-  font-weight: 500; /*font-weight set h1 heading is too bold for the design*/
-  padding: 80px 800px 0 300px;
-  margin-bottom: 0;
-
-
-
-}
-
-
-header p {
-  font-size: 0.75rem;
-  line-height: 1.25;
-  font-family: "poppins";
-  font-weight: 400;
-  padding: 20px 850px 0 300px;
-}
-
-
-.contactContent h1 {
-  font-size: 2rem;
-  font-family: "poppins";
-  font-weight: 500; /*font-weight set h1 heading is too bold for the design*/
-
+.contactHeader h1 {
+position: relative;
+top: 35%;
+left: 21%;
+width: 400px;
 
 
 }

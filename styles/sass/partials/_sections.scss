@@ -1,13 +1,6 @@
 @import "./variables";
 
-/*Categories*/
-
-main {
-  section {
-    margin-bottom: 90px;
-  }
-}
-
+//Categories
 
 .categoryGallery {
 
@@ -57,7 +50,7 @@ main {
        
           
 
-/*Featured Sale Section*/
+//Featured Sale Section
 
 
 .featured h2 {
@@ -189,7 +182,7 @@ main {
  
   
 
-/*Sale Section*/
+//Sale Section
 
 .saleGallery {
   display: flex;
@@ -266,7 +259,7 @@ $faded-spread-radius: 16px !default;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 16px;
-  margin: 0;
+  margin: 0 0 80px 0;
   color: $secondary;
   font-weight: 500;
   border: none;
@@ -338,4 +331,51 @@ $faded-spread-radius: 16px !default;
   height: 150px;
   width: 100%;
   margin: 0;
+}
+
+.topButton {
+
+font-size: 40px;
+  color: $primary;
+  cursor: pointer;
+  outline: none;
+  border-color: $primary;
+  border-radius: 50%;
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+
+
+
+
+      &:hover {
+        background-color: $sale; 
+        border: 2px $sale solid;
+        border-radius: 50%;
+        color: white;
+        
+      &:focus {
+        background-color: #666; 
+        border: 2px #666 solid;
+        color: white;
+
+    }
+  }
+}
+
+
+.topButton:hover + .hide {
+  display: block;
+  color: $primary;
+}
+
+.hide {
+  display: none;
+  position: relative;
+  bottom: 15px;
+  left: 11px;
+  margin: 0;
+  padding: 0;
 }

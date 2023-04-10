@@ -226,47 +226,96 @@ html {
   overflow: hidden;
 }
 
-/*this sheet will have all the styling for the whole sheet, so the wrapper, the font family if it's consistent, etc.*/ /*$bodyFont: */
+/*$bodyFont: */
 /*$headingFont: "Young Serif";
 $bodyFont: "Jakarta Sans";*/
 /* _variables site colour palette */
-* {
-  font-family: "poppins";
-  font-weight: 400px;
-  font-size: 1rem; /*root element font-size set to 125%, aka 1 rem = 20px */
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
 .wrapper {
   max-width: 1260px;
   width: 80%;
   margin: 0 auto;
 }
 
+section {
+  margin-bottom: 80px;
+}
+
+button {
+  color: #333;
+  background-color: transparent;
+  padding: 16px 32px;
+  border: 2px rgba(102, 102, 102, 0.6470588235) solid;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+button:hover {
+  background-color: #666;
+  border: 2px #666 solid;
+  color: white;
+}
+button:hover:focus {
+  background-color: #666;
+  border: 2px #666 solid;
+  color: white;
+}
+
+/*this sheet will have all the styling for the whole sheet, so the wrapper, the font family if it's consistent, etc.*/ /*$bodyFont: */
+/*$headingFont: "Young Serif";
+$bodyFont: "Jakarta Sans";*/
+/* _variables site colour palette */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "poppins";
+  font-weight: 400px;
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0 0 15px 0;
+}
+
+p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 /*$bodyFont: */
 /*$headingFont: "Young Serif";
 $bodyFont: "Jakarta Sans";*/
 /* _variables site colour palette */
-header {
-  height: 100vh;
-  width: 100%;
-  background-image: url("./../assets/home.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-header.contactHeader {
-  height: 30vh;
-  background-image: url("./../assets/contact-us.jpg");
-  background-position: bottom;
-}
-
-.topBar {
+#topBar {
+  position: sticky;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,68 +326,95 @@ header.contactHeader {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 60px;
+  padding: 20px 80px;
+  margin: 0;
 }
 
-.novasLogo {
-  height: 25px;
-  width: 125px;
-}
-
-nav ul {
+#mainMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
 }
-nav ul li {
-  padding-right: 30px;
-}
-nav ul li a {
+#mainMenu a {
   color: #333;
-  text-decoration: none;
-  font-size: 0.9rem;
   font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0 10px;
 }
-nav ul li a:hover {
+#mainMenu a:hover {
+  border-bottom: 1px #333 solid;
+}
+#mainMenu a:hover:focus {
   border-bottom: 1px #333 solid;
 }
 
-.cartIcon {
-  height: 30px;
-  width: 30px;
+sup {
+  vertical-align: text-top;
 }
 
-h1 {
-  font-size: 3rem;
-  font-family: "poppins";
-  font-weight: 500; /*font-weight set h1 heading is too bold for the design*/
-  padding: 80px 800px 0 300px;
-  margin-bottom: 0;
+.hamButton {
+  background-color: transparent;
+  border: 10px;
+  color: #333;
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 52px;
+  float: left;
+  line-height: 70px;
+  display: none;
 }
 
-header p {
-  font-size: 0.75rem;
-  line-height: 1.25;
-  font-family: "poppins";
-  font-weight: 400;
-  padding: 20px 850px 0 300px;
-}
-
-.contactContent h1 {
-  font-size: 2rem;
-  font-family: "poppins";
-  font-weight: 500; /*font-weight set h1 heading is too bold for the design*/
+.hamButton:focus {
+  outline: none;
 }
 
 /*$bodyFont: */
 /*$headingFont: "Young Serif";
 $bodyFont: "Jakarta Sans";*/
 /* _variables site colour palette */
-/*Categories*/
-main section {
-  margin-bottom: 90px;
+.indexHeader {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./../assets/home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 80px;
 }
 
+.contactHeader {
+  height: 35vh;
+  width: 100%;
+  background-image: url("./../assets/contact-us.jpg");
+  background-size: auto;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.headerContent {
+  position: relative;
+  top: 23%;
+  left: -20%;
+  height: 300px;
+  width: 250px;
+}
+
+.contactHeader h1 {
+  position: relative;
+  top: 35%;
+  left: 21%;
+  width: 400px;
+}
+
+/*$bodyFont: */
+/*$headingFont: "Young Serif";
+$bodyFont: "Jakarta Sans";*/
+/* _variables site colour palette */
 .categoryGallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,7 +460,6 @@ main section {
   padding: 5px 10px;
 }
 
-/*Featured Sale Section*/
 .featured h2 {
   text-align: center;
   font-weight: 500;
@@ -498,7 +573,6 @@ main section {
   color: white;
 }
 
-/*Sale Section*/
 .saleGallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,7 +635,7 @@ main section {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 16px;
-  margin: 0;
+  margin: 0 0 80px 0;
   color: #fff;
   font-weight: 500;
   border: none;
@@ -628,6 +702,45 @@ main section {
   margin: 0;
 }
 
+.topButton {
+  font-size: 40px;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  border-color: #333;
+  border-radius: 50%;
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+}
+.topButton:hover {
+  background-color: #eba6aa;
+  border: 2px #eba6aa solid;
+  border-radius: 50%;
+  color: white;
+}
+.topButton:hover:focus {
+  background-color: #666;
+  border: 2px #666 solid;
+  color: white;
+}
+
+.topButton:hover + .hide {
+  display: block;
+  color: #333;
+}
+
+.hide {
+  display: none;
+  position: relative;
+  bottom: 15px;
+  left: 11px;
+  margin: 0;
+  padding: 0;
+}
+
 /*$bodyFont: */
 /*$headingFont: "Young Serif";
 $bodyFont: "Jakarta Sans";*/
@@ -662,7 +775,7 @@ footer h2 {
 
 /*  About  */
 .footerAbout {
-  width: 15%;
+  width: 20%;
   margin-right: 30px;
 }
 
@@ -674,8 +787,8 @@ footer h2 {
 .footerAbout p {
   font-size: 12px;
   color: #fff;
-  margin: 20px 0 20px 0;
-  padding: 0;
+  margin: 20px 0 10px 0;
+  padding: 15px 0 10px 0;
 }
 
 .icon {
@@ -699,7 +812,7 @@ span img {
 /* Contact*/
 .footerContact {
   margin: 20px 0 30px 15px;
-  width: 15%;
+  width: 20%;
 }
 
 .footerContact li {
@@ -714,7 +827,7 @@ span img {
 /* Profile  */
 .footerProfile {
   margin: 20px 0 30px 15px;
-  width: 15%;
+  width: 20%;
 }
 
 .footerProfile li {
@@ -757,7 +870,7 @@ span img {
 /*$headingFont: "Young Serif";
 $bodyFont: "Jakarta Sans";*/
 /* _variables site colour palette */
-.contactForm ul {
+.contactForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -767,101 +880,238 @@ $bodyFont: "Jakarta Sans";*/
           flex-direction: column;
   position: relative;
   left: 21%;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin: 80px 0;
 }
 
-.contactForm li {
+.contactForm input[type=text] {
+  width: 600px;
+  border: none;
+  color: #333;
+  border-bottom: 1px #333 solid;
+  font-family: "poppins";
+  font-size: 1rem;
+  line-height: 2rem;
   margin-bottom: 40px;
 }
 
-input[type=text] {
+input[type=email] {
   width: 600px;
   border: none;
   color: #333;
   border-bottom: 1px #333 solid;
   font-family: "poppins";
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 40px;
 }
 
-.contactForm input[type=email] {
+textarea {
   width: 600px;
   border: none;
   color: #333;
   border-bottom: 1px #333 solid;
   font-family: "poppins";
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 40px;
 }
 
-.contactForm textarea {
-  width: 600px;
-  border: none;
-  color: #333;
-  border-bottom: 1px #333 solid;
-  font-family: "poppins";
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.contactForm button {
-  background-color: #fff;
-  border: 2px rgba(102, 102, 102, 0.6470588235) solid;
-  padding: 16px 32px;
-  font-size: 14px;
-  text-align: center;
+.modalButton {
+  width: 110px;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
   cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  padding: 10px 20px;
 }
 
-.contactForm button:hover {
-  background-color: #666;
+#modalOverlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#modalOverlay #modal {
+  max-width: 650px;
+  width: 100%;
+  background: white;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+#modalOverlay #modal .modalFooter {
+  margin: auto;
+}
+
+/*#close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  background-color: #666; 
   border: 2px #666 solid;
   color: white;
-}
-.contactForm button:hover:focus {
-  background-color: #666;
-  border: 2px #666 solid;
-  color: white;
-}
-
-/*.inputText {
-
-  border: none;
-  color: $secondary;
-  border-bottom: 1px $primary solid;
-  padding: 4px 0;
-  transition: .3s ease-in-out;
-  margin: 20px 0;
-
-}
-
-.inputText:focus {
-  outline: none;
-  padding: 4px 8px;
-  border-radius: 12;  
-  border-bottom: 1px $primary solid;
-}
-
-.inputText::placeholder {
-  color: $primary;
-  transition: .3s;
-  font-family: "poppins";
-  font-size: 10px;
-  line-height: 1.5rem;
-}
-
-
-.inputEmail {
-  border: 1px solid transparent;
-  border-bottom: 1px $primary solid;
-  padding: 4px 0;
-  outline-style: none;
-  transition: 3s ease-in-out;
-
-
-
-
 }*/
+/*$bodyFont: */
+/*$headingFont: "Young Serif";
+$bodyFont: "Jakarta Sans";*/
+/* _variables site colour palette */
+@media (max-width: 800px) {
+  #mainMenu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  #mainMenu.show {
+    display: inline-block;
+  }
+}
+@media (max-width: 576px) {
+  #mainMenu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  #mainMenu.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hamButton {
+    display: block;
+  }
+  nav {
+    background-color: rgb(62, 109, 149);
+  }
+}
+/*
+
+  @media (max-width: 320px) {
+    #topBar {
+          flex-direction: column;
+          align-items: center;
+      }
+      input[type=checkbox] {
+          align-self: flex-start;
+      }
+      label {
+          align-self: flex-start;
+      }
+      .logo {
+          margin: 10px 0 20px 0;
+      }
+  }
+    #mainMenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+
+
+@media (max-width: 1000px){
+  header {
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+
+
+   }
+}
+
+@media (max-width: 800px){
+ header, main {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+
+
+  }
+}
+
+header h1 {
+  display: block;
+    text-align: center;
+    font-size: 17px;
+}
+
+header p {
+  display: block;
+    text-align: center;
+    font-size: 17px;
+
+}
+
+.topBar {
+  display: block;
+  text-align: center;
+  font-size: 17px;
+}
+
+  nav ul {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+
+  }
+
+nav li {
+
+  display: block;
+  justify-content: center;    
+  margin: 10px 0;
+
+}
+
+
+.categoryGallery {
+  flex-direction: column;
+}
+
+.featuredGallery {
+  flex-direction: column;
+}
+
+
+footer {
+  .footerFlexContainer {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 80%;
+
+  }
+} 
+
+  footer {
+    .footerNewsletter{
+      width: 70%;
+    }
+  } */

@@ -1,0 +1,41 @@
+@import "./variables";
+
+.wrapper {
+	max-width: 1260px;
+	width: 80%;
+	margin: 0 auto;
+  
+}
+
+section {
+  margin-bottom: 80px;
+  
+}
+
+button {
+    color: $primary;
+    background-color: transparent;
+    padding: 16px 32px;
+    border: 2px #666666a5 solid;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+
+
+
+      
+    &:hover {
+      background-color: #666; 
+      border: 2px #666 solid;
+      color: white;
+      
+    &:focus {
+      background-color: #666; 
+      border: 2px #666 solid;
+      color: white;
+      
+    }
+  }
+}

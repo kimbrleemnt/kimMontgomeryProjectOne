@@ -1,24 +1,55 @@
 /*this sheet will have all the styling for the whole sheet, so the wrapper, the font family if it's consistent, etc.*/
+
 @import "./variables";
 
+
 * {
+  margin: 0;
+  padding: 0;   
+}
+
+
+body {
   font-family: "poppins";
   font-weight: 400px;
-  font-size: 1rem; /*root element font-size set to 125%, aka 1 rem = 20px */
+  font-size: 1rem;
   color: $primary;
   margin: 0;
   padding: 0;
 
 }
 
+h1 {
+  font-size: 3.5rem;
+  font-weight: 500; //font-weight set h1 heading is too bold for the design
+  margin: 0;
+  padding: 0 0 15px 0;
+}
 
+
+p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+
+}
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+
 }
 
-.wrapper {
-  max-width: 1260px;
-  width: 80%;
-  margin: 0 auto;
+li {
+  margin: 0;
+  padding: 0;
+
 }
+
+a {
+  text-decoration: none;
+
+}
+

@@ -1,69 +1,84 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novas: Contact Us</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="styles/style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Novas: Contact Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="styles/style.css">
+<script src="https://kit.fontawesome.com/f8f63e38c0.js" crossorigin="anonymous"></script>
+
+</head>
+  
+<body>
+  
+    <nav id="topBar">
+      <a href="./index.html"><img src="./assets/logo-black.png" alt="Novas logo" class="novasLogo"></a>
+  
+      <button class="hamButton" id="hamButton">
+        <i class="fa-solid fa-bars" id="dropDown"></i>
+    </button>
+
+      <nav>
+        <ul id="mainMenu">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="#blog">BLOG</a></li>
+        <li><a href="./contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    
+        <a href="#"><img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping cart icon" class="cartIcon"><sup>2</sup></a>
+    </nav>
+  
+  
+    <header class="contactHeader"> 
+
+        <h1>Contact Us</h1> 
+
+    </header> 
    
-  </head>
-  
-  <body>
-  
-    <header class="contactHeader">
-  
-      <div class="topBar">  
-  
-        <a href="./index.html" class="logo">
-          <img src="./assets/logo-black.png" alt="Novas logo" class="novasLogo">
-        </a>
-  
-          <nav>
-            <ul>
-              <li><a href="./index.html">HOME</a></li>
-              <li><a href="#blog">BLOG</a></li>
-              <li><a href="./contact.html">CONTACT US</a></li>
-            </ul>
-          </nav>
-          
-          <div class="shoppingCart">
-  
-                <a href="#">
-                  <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping cart icon" class="cartIcon">
-                </a>  
-  
-          </div> 
-      </div> 
-
-      <div class="contactContent">
-          <h1>Contact Us</h1> 
-      </div>
-
-        </header>
-
 <main>
              
-              <form class="contactForm">
-                <ul>
+    <form class="contactForm">
 
+      <input type="text" class="inputText" placeholder="Your Name">
+      <input type="email" class="inputEmail" placeholder="Your Email">
+      <textarea name="message" class="textAreaMessage" cols="3" rows="3" placeholder="Your Message"></textarea>
+      
+      <button id="openModal" class="modalButton">Submit</button>
 
-<li><input type="text" class="inputText" placeholder="Your Name"></li>
-                          
-<li><input type="email" class="inputEmail" placeholder="Your Email"></li>               
+      <div id="modalOverlay">
+          <div id="modal">
 
-<li><textarea name="message" class="textAreaMessage" cols="3" rows="3" placeholder="Your Message"></textarea></li>
-                          
-<li><button type="submit">Submit</button></li>
+              <div class="modalHeader">
+                <h2>From Novas Team:</h2>
+              </div>
 
+              <div class="modalContent">
+                <p>Thank you for contacting us!</p>
+              </div>
 
-                </ul>
-              </form>
-     
-            </main>          
+              <div class="modalFooter">
+                <button id="close">Close</button>
+              </div>
+
+          </div>
+      </div>
+
+      <!--<button class="trigger">Click here to trigger the modal!</button>
+      <div class="modal">
+          <div class="modalContent">
+              <span class="closeButton">&times;</span>
+              <h1>Hello, I am a modal!</h1>
+          </div>
+      </div> -->
+
+    </form>
+  
+</main>          
 
         <footer>
           <div class="wrapper">
@@ -83,7 +98,7 @@
                   <div class="sec footerContact">
                     <h2>Contact</h2>
                     <ul class="contact">
-                      <li><span><img src="./assets/icons/address.svg" alt="our address"></span><a href="address">40 Baria Street</a>/li>
+                      <li><span><img src="./assets/icons/address.svg" alt="our address"></span><a href="address">40 Baria Street</a></li>
                     
                       <li><span><img src="./assets/icons/telephone.svg" alt="phone us"></span><a href="tel:123456789">156-366-6666</a></li>
                     
@@ -99,7 +114,7 @@
                       <ul class="profile">
                       <li><span><img src="./assets/icons/user.svg" alt="account"></span><a href="#">My Account</a></li>
   
-                      <li><span><img src="./assets/icons/checkout.svg" alt="checkout"></span><a href="#">Checkout</a>></li>
+                      <li><span><img src="./assets/icons/checkout.svg" alt="checkout"></span><a href="#">Checkout</a></li>
                       
                       <li><span><img src="./assets/icons/tracking.svg" alt="order tracking"></span><a href="#">Order Tracking</a></li>
                       

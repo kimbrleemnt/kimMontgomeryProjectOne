@@ -9,42 +9,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="styles/style.css">
+  <script src="https://kit.fontawesome.com/f8f63e38c0.js" crossorigin="anonymous"></script>
  
 </head>
 
 <body>
 
-  <header>
+  <nav id="topBar">
 
-    <div class="topBar">  
+    <a href="./index.html"><img src="./assets/logo-black.png" alt="Novas logo" class="novasLogo"></a>
 
-      <a href="./index.html" class="logo">
-        <img src="./assets/logo-black.png" alt="Novas logo" class="novasLogo">
-      </a>
+    <button class="hamButton" id="hamButton">
+      <i class="fa-solid fa-bars" id="dropDown"></i>
+  </button>
 
-        <nav>
-          <ul>
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="#blog">BLOG</a></li>
-            <li><a href="./contact.html">CONTACT US</a></li>
-          </ul>
-        </nav>
-        
-        <div class="shoppingCart">
-
-              <a href="#">
-                <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping cart icon" class="cartIcon">
-              </a>  
-
-        </div> 
-      </div>
+    <nav>
+      <ul id="mainMenu">
+      <li><a href="./index.html">HOME</a></li>
+      <li><a href="#blog">BLOG</a></li>
+      <li><a href="./contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
   
+      <a href="#"><img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping cart icon" class="cartIcon"><sup>2</sup></a>
+  </nav>
 
-
-        <h1>NOVAS Boutique Shop</h1> 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, magnam inventore ipsa similique nulla itaque quidem quis voluptates voluptate at libero repellat animi quo in minima ipsum minus velit qui!</p>
-     
-
+  <header class="indexHeader"> 
+    <div class="headerContent wrapper">
+      <h1>NOVAS Boutique Shop</h1> 
+      <p>Lorem, ipsum dolor sit amet consecr adipisicing elit. Aut, magnam inventore ipsa similique nulla itaque quidem quis voluptates voluptate at libero repellat animi uo in minima quo in minima!</p>
+    </div>
   </header> 
 
   <main>
@@ -180,6 +174,7 @@
           <div class="wrapper">
             <h2>Follow Instagram</h2>
               <a href="#"><h3>@novas_shop</h3></a>
+              
                 <ul class="igFeed">
                   <li><img src="./assets/ig1.jpg" alt="instagram photo"></li>
                   <li><img src="./assets/ig2.jpg" alt="instagram photo"></li>
@@ -189,7 +184,17 @@
                 </ul>
             </div><!--end of wrapper-->
         </section><!--end of instaFeed section-->
+        
+
+
+        <button onclick="toTop()" class="topButton">
+          <i class="fa-regular fa-circle-up"></i>
+         
+      </button>
+      <div class="hide">Back to Top</div>
+
     
+
   </main>
 
      <footer>
@@ -210,7 +215,7 @@
                 <div class="sec footerContact">
                   <h2>Contact</h2>
                   <ul class="contact">
-                    <li><span><img src="./assets/icons/address.svg" alt="our address"></span><a href="address">40 Baria Street</a>/li>
+                    <li><span><img src="./assets/icons/address.svg" alt="our address"></span><a href="address">40 Baria Street</a></li>
                   
                     <li><span><img src="./assets/icons/telephone.svg" alt="phone us"></span><a href="tel:123456789">156-366-6666</a></li>
                   
@@ -226,7 +231,7 @@
                     <ul class="profile">
                     <li><span><img src="./assets/icons/user.svg" alt="account"></span><a href="#">My Account</a></li>
 
-                    <li><span><img src="./assets/icons/checkout.svg" alt="checkout"></span><a href="#">Checkout</a>></li>
+                    <li><span><img src="./assets/icons/checkout.svg" alt="checkout"></span><a href="#">Checkout</a></li>
                     
                     <li><span><img src="./assets/icons/tracking.svg" alt="order tracking"></span><a href="#">Order Tracking</a></li>
                     
@@ -247,6 +252,6 @@
           </div>  <!--.footerFlexContainer END-->
         </div>  <!--.wrapper END-->
       </footer>
-    
+    	<script src="script.js"></script>
 </body>
 </html>
