@@ -48,35 +48,15 @@
       <input type="email" class="inputEmail" placeholder="Your Email">
       <textarea name="message" class="textAreaMessage" cols="3" rows="3" placeholder="Your Message"></textarea>
       
-      <button id="openModal" class="modalButton">Submit</button>
+      <button onclick="myFunction()" class="trigger">Submit</button>
+        <div class="modal">
+            <div class="modalContent">
+                <span class="closeButton">&times;</span>
+                <h1>Thank you for your submission!</h1>
+            </div>
+        </div>
 
-      <div id="modalOverlay">
-          <div id="modal">
-
-              <div class="modalHeader">
-                <h2>From Novas Team:</h2>
-              </div>
-
-              <div class="modalContent">
-                <p>Thank you for contacting us!</p>
-              </div>
-
-              <div class="modalFooter">
-                <button id="close">Close</button>
-              </div>
-
-          </div>
-      </div>
-
-      <!--<button class="trigger">Click here to trigger the modal!</button>
-      <div class="modal">
-          <div class="modalContent">
-              <span class="closeButton">&times;</span>
-              <h1>Hello, I am a modal!</h1>
-          </div>
-      </div> -->
-
-    </form>
+      </form>
   
 </main>          
 
@@ -135,5 +115,6 @@
             </div>  <!--.footerFlexContainer END-->
           </div>  <!--.wrapper END-->
         </footer>
+        <script src="script.js"></script>
 </body>
 </html>

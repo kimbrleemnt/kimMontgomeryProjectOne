@@ -49,9 +49,8 @@ textarea {
 
 }
 
-.modalButton {
+.trigger {
     width: 110px;
-    transition-duration: 0.4s; 
     cursor: pointer;
     font-size: .9rem;
     line-height: 1.2rem;
@@ -59,47 +58,47 @@ textarea {
 
 }
 
-//The Modal (background) 
-#modalOverlay {
-  width: 100%; //Full width 
-  height: 100vh;  //Full height 
-  position: absolute; //Stay in place
-  background: rgba(0, 0, 0, 0.7);
-
-  display: none; //changed from Flex to None
-  align-items: center;
-  justify-content: center;
-
-}
-
-//Modal Content
-#modalOverlay #modal {
-  max-width: 650px;
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
-  background: white;
-  height: 400px;
-
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
 
-#modalOverlay #modal .modalFooter {
-  margin: auto;
-
+.modalContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
 }
 
- //The Close Button 
-/*#close {
-  color: #aaaaaa;
+.closeButton {
   float: right;
-  font-size: 28px;
-  font-weight: bold;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
 }
 
-#close:hover,
-#close:focus {
-  background-color: #666; 
-  border: 2px #666 solid;
-  color: white;
-}*/
+.closeButton:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}

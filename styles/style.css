@@ -358,13 +358,12 @@ sup {
 
 .hamButton {
   background-color: transparent;
-  border: 10px;
+  border: 5px;
   color: #333;
   cursor: pointer;
   font-size: 30px;
-  margin-left: 52px;
-  float: left;
-  line-height: 70px;
+  padding: 10px;
+  margin: 0;
   display: none;
 }
 
@@ -388,11 +387,11 @@ $bodyFont: "Jakarta Sans";*/
 }
 
 .contactHeader {
-  height: 35vh;
+  height: 37vh;
   width: 100%;
   background-image: url("./../assets/contact-us.jpg");
   background-size: auto;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -916,62 +915,68 @@ textarea {
   margin-bottom: 40px;
 }
 
-.modalButton {
+.trigger {
   width: 110px;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
   cursor: pointer;
   font-size: 0.9rem;
   line-height: 1.2rem;
   padding: 10px 20px;
 }
 
-#modalOverlay {
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+}
+
+.modalContent {
   position: absolute;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
 }
 
-#modalOverlay #modal {
-  max-width: 650px;
-  width: 100%;
-  background: white;
-  height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px;
-}
-
-#modalOverlay #modal .modalFooter {
-  margin: auto;
-}
-
-/*#close {
-  color: #aaaaaa;
+.closeButton {
   float: right;
-  font-size: 28px;
-  font-weight: bold;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
 }
 
-#close:hover,
-#close:focus {
-  background-color: #666; 
-  border: 2px #666 solid;
-  color: white;
-}*/
+.closeButton:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+}
+
 /*$bodyFont: */
 /*$headingFont: "Young Serif";
 $bodyFont: "Jakarta Sans";*/
@@ -986,6 +991,7 @@ $bodyFont: "Jakarta Sans";*/
     width: 100%;
   }
   #mainMenu.show {
+    position: relative;
     display: inline-block;
   }
 }
@@ -1007,111 +1013,6 @@ $bodyFont: "Jakarta Sans";*/
     display: block;
   }
   nav {
-    background-color: rgb(62, 109, 149);
+    background-color: transparent;
   }
 }
-/*
-
-  @media (max-width: 320px) {
-    #topBar {
-          flex-direction: column;
-          align-items: center;
-      }
-      input[type=checkbox] {
-          align-self: flex-start;
-      }
-      label {
-          align-self: flex-start;
-      }
-      .logo {
-          margin: 10px 0 20px 0;
-      }
-  }
-    #mainMenu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-
-
-
-
-@media (max-width: 1000px){
-  header {
-     display: flex;
-     justify-content: space-between;
-     text-align: center;
-
-
-   }
-}
-
-@media (max-width: 800px){
- header, main {
-    display: block;
-    text-align: center;
-    font-size: 17px;
-
-
-  }
-}
-
-header h1 {
-  display: block;
-    text-align: center;
-    font-size: 17px;
-}
-
-header p {
-  display: block;
-    text-align: center;
-    font-size: 17px;
-
-}
-
-.topBar {
-  display: block;
-  text-align: center;
-  font-size: 17px;
-}
-
-  nav ul {
-    display: block;
-    text-align: center;
-    font-size: 17px;
-
-  }
-
-nav li {
-
-  display: block;
-  justify-content: center;    
-  margin: 10px 0;
-
-}
-
-
-.categoryGallery {
-  flex-direction: column;
-}
-
-.featuredGallery {
-  flex-direction: column;
-}
-
-
-footer {
-  .footerFlexContainer {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 100px;
-    width: 80%;
-
-  }
-} 
-
-  footer {
-    .footerNewsletter{
-      width: 70%;
-    }
-  } */

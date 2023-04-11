@@ -38,19 +38,19 @@
 
 sup {
     vertical-align: text-top;
+ 
   }
 
 
 
 .hamButton {
   background-color: transparent;
-  border: 10px;
+  border: 5px;
   color: $primary;
   cursor: pointer;
   font-size: 30px;
-  margin-left: 52px;
-  float: left;
-  line-height: 70px;
+  padding: 10px;
+  margin: 0;
   display: none;
 }
 
